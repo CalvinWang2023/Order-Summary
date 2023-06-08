@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-hover: hsl(244, 83%, 68%);
+}
+
+body {
+    background: url(./img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+
+    border-radius: 20px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > * {
+    margin: 13px 0;
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+}
+
+.order-desc {
+    margin: 5px 60px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--desaturated-blue);
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--very-pale-blue);
+    border-radius: 20px;
+}
+
+.plan-container strong {
+    color: var(--dark-blue);
+    font-weight: 1000;
+}
+
+.plan-desc {
+    margin-right: 85px;
+    margin-left: 20px;
+    line-height: 28px;
+}
+
+.price {
+    color: var(--desaturated-blue);
+}
+
+.plan-container a {
+    color: var(--bright-blue);
+    font-weight: 600;
+}
+
+.plan-container a:hover {
+    color: var(--bright-blue-hover);
+    text-decoration: none;
+}
+
+button {
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.cancel-button:hover {
+    color: black;
+}
+
+.proceed-button {
+    background-color: var(--bright-blue);
+    padding: 1rem;
+    color: white;
+    width: 77%;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.proceed-button:hover {
+    background-color: var(--bright-blue-hover);
+}
